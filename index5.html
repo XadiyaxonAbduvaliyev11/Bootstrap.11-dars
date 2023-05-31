@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                Edit
+            </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Edit</h1>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Title:</h6>
+                            <input type="text" id="login" class="form-control" placeholder="Task Entity">
+                            <label for="region">Status:</label>
+                            <select name="region" class="form-control" id="region">
+                                <option value="1">Open</option>
+                                <option value="2">Close</option>
+                            </select>
+                            <label for="dist">Content:</label>
+                            <textarea type="text" id="dist" class="form-control" placeholder="(3)Write a Task POJO with the following properties: title status of type Status(Enum),content"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jQuery.min.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
